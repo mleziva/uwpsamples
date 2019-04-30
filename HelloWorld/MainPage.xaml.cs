@@ -26,5 +26,10 @@ namespace HelloWorld
         {
             this.InitializeComponent();
         }
+
+        private void MyButton_Click(object sender, RoutedEventArgs e)
+        {
+            myButton.Content = "Thanks for clicking";
+        }
     }
 }
