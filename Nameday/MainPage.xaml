@@ -6,8 +6,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Default">
+    <Page.DataContext>
+        <local:MainPageData/>
+    </Page.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="320"/>
@@ -25,7 +27,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Margin="0,6,1062,11" Grid.Row="0" Text="TextBlock" TextWrapping="Wrap" Width="118" d:LayoutOverrides="VerticalAlignment, LeftMargin, RightMargin" FontSize="21.333"/>
+            <TextBlock Margin="0,6,1062,11" Grid.Row="0" Text="{Binding Greeting}" TextWrapping="Wrap" Width="118" d:LayoutOverrides="VerticalAlignment, LeftMargin, RightMargin" FontSize="21.333"/>
             <Ellipse Grid.Row="1"/>
         </Grid>
     </Grid>
