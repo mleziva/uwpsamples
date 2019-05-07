@@ -20,7 +20,8 @@
                 <RowDefinition Height="50"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Ellipse Grid.Row="1" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition"/>
+            <ListView x:Name="listView" ItemTemplate="{StaticResource NamedayModelTemplate}" ItemsSource="{Binding Namedays}"
+                      Grid.Row="1" ></ListView>
         </Grid>
         <Grid Grid.Column="1" BorderBrush="#FF6A2727">
             <Grid.RowDefinitions>

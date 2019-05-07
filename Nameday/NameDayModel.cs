@@ -2,12 +2,12 @@
 
 namespace Nameday
 {
-    public class NameDayModel
+    public class NamedayModel
     {
         public int Month { get; set; }
         public int Day { get; set; }
         public IEnumerable<string> Names { get; }
-        public NameDayModel(int month, int day, IEnumerable<string> names)
+        public NamedayModel(int month, int day, IEnumerable<string> names)
         {
             Month = month;
             Day = day;
