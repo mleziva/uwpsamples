@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameday", "Nameday\Nameday.csproj", "{E8DF5B51-8496-4C43-8159-C13B56131999}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiredBrainCoffee.CustomersApp", "WiredBrainCoffee.CustomersApp\WiredBrainCoffee.CustomersApp.csproj", "{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -67,6 +69,30 @@ Global
 		{E8DF5B51-8496-4C43-8159-C13B56131999}.Release|x86.ActiveCfg = Release|x86
 		{E8DF5B51-8496-4C43-8159-C13B56131999}.Release|x86.Build.0 = Release|x86
 		{E8DF5B51-8496-4C43-8159-C13B56131999}.Release|x86.Deploy.0 = Release|x86
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Debug|ARM.ActiveCfg = Debug|ARM
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Debug|ARM.Build.0 = Debug|ARM
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Debug|ARM.Deploy.0 = Debug|ARM
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Debug|ARM64.Build.0 = Debug|ARM64
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Debug|x64.ActiveCfg = Debug|x64
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Debug|x64.Build.0 = Debug|x64
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Debug|x64.Deploy.0 = Debug|x64
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Debug|x86.ActiveCfg = Debug|x86
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Debug|x86.Build.0 = Debug|x86
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Debug|x86.Deploy.0 = Debug|x86
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Release|ARM.ActiveCfg = Release|ARM
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Release|ARM.Build.0 = Release|ARM
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Release|ARM.Deploy.0 = Release|ARM
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Release|ARM64.ActiveCfg = Release|ARM64
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Release|ARM64.Build.0 = Release|ARM64
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Release|ARM64.Deploy.0 = Release|ARM64
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Release|x64.ActiveCfg = Release|x64
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Release|x64.Build.0 = Release|x64
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Release|x64.Deploy.0 = Release|x64
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Release|x86.ActiveCfg = Release|x86
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Release|x86.Build.0 = Release|x86
+		{EBC25E5B-FB90-4B98-A53E-5805E6BE6DA8}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
