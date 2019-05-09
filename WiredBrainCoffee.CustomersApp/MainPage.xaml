@@ -61,17 +61,19 @@
             </StackPanel>
            
 
-        <ListView Grid.Row="1">
-            <ListViewItem>Thomas</ListViewItem>
-            <ListViewItem>Julie</ListViewItem>
-            <ListViewItem>Anna</ListViewItem>
+        <ListView Grid.Row="1" x:Name="customerListView" DisplayMemberPath="FirstName"
+                  SelectionChanged="CustomerListView_SelectionChanged">
         </ListView>
         </Grid>
 
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <TextBox Header="Firstname" Margin="10"/>
-            <TextBox Header="Lastname" Margin="10"/>
-            <CheckBox Content="Is developer" Margin="10"/>
+            <TextBox Header="Firstname" Margin="10" x:Name="txtFirstName"
+                     TextChanged="TxtBox_TextChanged"/>
+            <TextBox Header="Lastname" Margin="10" x:Name="txtLastName"
+                     TextChanged="TxtBox_TextChanged"/>
+
+            <CheckBox Content="Is developer" Margin="10" x:Name="chkIsDeveloper"
+                      Checked="ChkBox_IsChanged" Unchecked="ChkBox_IsChanged"/>
         </StackPanel>
         
         
