@@ -18,5 +18,18 @@ namespace WiredBrainCoffee.CustomersApp
             var messageDialog = new MessageDialog("Customer Added!");
             await messageDialog.ShowAsync();
         }
+
+        private void ButtonDeleteCustomer_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonMove_Click(object sender, RoutedEventArgs e)
+        {
+            int col = Grid.GetColumn(customerListGrid);
+            int newCol = col == 0 ? 2 : 0;
+            Grid.SetColumn(customerListGrid, newCol);
+            moveSymbolIcon.Symbol = newCol == 0 ? Symbol.Forward : Symbol.Back;
+        }
     }
 }
