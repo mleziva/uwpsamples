@@ -5,11 +5,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:WiredBrainCoffee.CustomersApp.Controls"
+    xmlns:model="using:WiredBrainCoffee.CustomersApp.Model"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     d:DesignWidth="600"
     d:DesignHeight="400">
-
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -23,7 +24,7 @@
 
         <StackPanel Grid.ColumnSpan="3" Background="SeaGreen" Orientation="Horizontal">
             <Image Source="Images/logo.png" Height="90" Margin="5"/>
-            <TextBlock Text="Coffee Customers" 
+            <TextBlock Text="{StaticResource applicationTitle}" 
                        FontSize="30"
                        FontWeight="ExtraBold"
                        Foreground="White"
@@ -35,7 +36,7 @@
                        Margin="0 0 0 25"/>
         </StackPanel>
 
-        <Grid Grid.Row="1" Background="#eeeeee" x:Name="customerListGrid">
+        <Grid Grid.Row="1" Background="{StaticResource customerListBackgroundBrush}" x:Name="customerListGrid">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition/>
