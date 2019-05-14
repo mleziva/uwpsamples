@@ -35,21 +35,7 @@ namespace WiredBrainCoffee.CustomersApp
             await ViewModel.SaveAsync();
             deferral.Complete();
         }
-        private void ButtonAddCustomer_Click(object sender, RoutedEventArgs e)
-        {
-            var customer = new Customer { FirstName = "New" };
-            customerListView.Items.Add(customer);
-            customerListView.SelectedItem = customer;
-        }
-
-        private void ButtonDeleteCustomer_Click(object sender, RoutedEventArgs e)
-        {
-            var customer = customerListView.SelectedItem as Customer;
-            if(customer != null)
-            {
-                customerListView.Items.Remove(customer);
-            }
-        }
+  
 
         private void ButtonMove_Click(object sender, RoutedEventArgs e)
         {
@@ -58,13 +44,6 @@ namespace WiredBrainCoffee.CustomersApp
             Grid.SetColumn(customerListGrid, newCol);
             moveSymbolIcon.Symbol = newCol == 0 ? Symbol.Forward : Symbol.Back;
         }
-
-        private void CustomerListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var customer = customerListView.SelectedItem as Customer;
-            customerDetailsControl.Customer = customer;
-        }
-
         private void ButtonToggleTheme_Click(object sender, RoutedEventArgs e)
         {
             this.RequestedTheme = RequestedTheme == ElementTheme.Dark ? ElementTheme.Light : ElementTheme.Dark;
