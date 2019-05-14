@@ -64,17 +64,24 @@
            
 
         <ListView Grid.Row="1"
-                  ItemsSource="{Binding Customer}"
-                  SelectedItem="{Binding SelectedCustomer, Mode=TwoWay}"
-                  x:Name="customerListView" DisplayMemberPath="FirstName"
-                  >
+                  ItemsSource="{x:Bind ViewModel.Customers}"
+                  SelectedItem="{x:Bind ViewModel.SelectedCustomer, Mode=TwoWay}"
+                  x:Name="customerListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding FirstName}" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding LastName}" Margin="5 0 0 0" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
         </ListView>
         </Grid>
 
         <controls:CustomerDetailsControl 
             Grid.Row="1" Grid.Column="1"
             x:Name="customerDetailsControl"
-            Customer="{Binding SelectedCustomer,Mode=OneWay}"
+            Customer="{x:Bind ViewModel.SelectedCustomer,Mode=OneWay}"
             />
     </Grid>
 </Page>
