@@ -63,7 +63,10 @@
             </StackPanel>
            
 
-        <ListView Grid.Row="1" x:Name="customerListView" DisplayMemberPath="FirstName"
+        <ListView Grid.Row="1"
+                  ItemsSource="{Binding Customer}"
+                  SelectedItem="{Binding SelectedCustomer, Mode=TwoWay}"
+                  x:Name="customerListView" DisplayMemberPath="FirstName"
                   >
         </ListView>
         </Grid>
@@ -71,9 +74,7 @@
         <controls:CustomerDetailsControl 
             Grid.Row="1" Grid.Column="1"
             x:Name="customerDetailsControl"
-            Customer="{Binding ElementName=customerListView, Path=SelectedItem,Mode=OneWay}"
+            Customer="{Binding SelectedCustomer,Mode=OneWay}"
             />
-
-
     </Grid>
 </Page>

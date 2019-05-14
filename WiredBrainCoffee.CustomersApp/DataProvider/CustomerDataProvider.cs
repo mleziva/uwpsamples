@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace WiredBrainCoffee.CustomersApp.DataProvider
 {
-    public class CustomerDataProvider
+    public class CustomerDataProvider : ICustomerDataProvider
     {
         private static readonly string _customersFileName = "customers.json";
         private static readonly StorageFolder _localFolder = ApplicationData.Current.LocalFolder;
